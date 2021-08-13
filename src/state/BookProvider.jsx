@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { fetchLocBooks } from '../services/locBooks';
+import { fetchBooks } from '../services/openLibraryApi';
 
 const BookContext = createContext();
 
@@ -7,7 +7,7 @@ export const BookProvider = ({ children }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetchLocBooks().then(setBooks);
+    fetchBooks().then(setBooks);
   }, []);
 
   return (
