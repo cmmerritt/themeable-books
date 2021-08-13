@@ -7,8 +7,7 @@ export const fetchBooks = async () => {
   const mappedArray = arrayOfObj.map(obj => ({
     title: obj.title,
     year: obj.first_publish_year,
-    isbn: obj.cover_i,
-    description: obj.title
+    coverId: obj.cover_i
   })
   );
   return mappedArray;
