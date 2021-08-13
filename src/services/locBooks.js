@@ -8,6 +8,5 @@ export const fetchLocBooks = async () => {
     author: book.item.contributors[0],
     description: book.description.toString().split
   }));
-  console.log(map);
   return map;
 };

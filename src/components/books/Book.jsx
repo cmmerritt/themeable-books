@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ title, author, description }) => (
-  <p>
+const Book = ({ title, year, isbn, description }) => (
+  <>
     <p>{title}</p>
-    <p>{author}</p>
+    <p>{year}</p>
+    <p>{isbn}</p>
     <p>{description}</p>
-  </p>
+  </>
 );
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
-  author: PropTypes.string,
+  year: PropTypes.string,
+  isbn: PropTypes.string,
   description: PropTypes.string,
 };
 
