@@ -13,8 +13,8 @@ const Book = ({ title, year, coverId }) => (
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
-  year: PropTypes.string,
-  coverId: PropTypes.string
+  year: PropTypes.number,
+  coverId: PropTypes.number
 };
 
 export default Book;
