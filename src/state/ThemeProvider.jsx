@@ -5,6 +5,14 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
 
+  // const themeToggle = (currentTheme) => {
+  //   if (currentTheme === 'light') {
+  //     setTheme('light')
+  //   } else {
+  //     setTheme('dark');
+  //   }
+  // };
+
   useEffect(() => {
     console.log(theme);
   }, [theme]);

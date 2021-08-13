@@ -5,10 +5,10 @@ import { BookProvider } from './state/BookProvider';
 import ThemeProvider from './state/ThemeProvider';
 
 render(
-  <BookProvider>
-    <ThemeProvider>
+  <ThemeProvider>
+    <BookProvider>
       <App />,
-    </ThemeProvider>
-  </BookProvider>,
+    </BookProvider>
+  </ThemeProvider>,
   document.getElementById('root')
 );
