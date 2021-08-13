@@ -1,19 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { findCoverImg } from '../../services/bookCoverApi';
+import styles from './Book.css';
 
 const Book = ({ title, year, coverId }) => (
-  <figure>
+  <figure className={styles.figure}>
     <img src={findCoverImg(coverId)} alt={title} />
     <figcaption>{title}</figcaption>
     <figcaption>{year}</figcaption>
   </figure>
-  // <>
-  //   <p>{title}</p>
-  //   <p>{year}</p>
-  //   <p>{coverId}</p>
-  //   <p>{description}</p>
-  // </>
 );
 
 Book.propTypes = {
