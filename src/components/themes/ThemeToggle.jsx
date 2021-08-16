@@ -14,6 +14,7 @@ const ThemeToggle = () => {
         checked={theme === 'light' ? true : false}
         onChange={setTheme}
       />
+      <label htmlFor="light">Light theme</label>
 
       <input 
         type="radio"
@@ -22,6 +23,7 @@ const ThemeToggle = () => {
         checked={theme === 'dark' ? true : false}
         onChange={setTheme}
       />
+      <label htmlFor="dark">Dark theme</label>
     </>
 
   );
